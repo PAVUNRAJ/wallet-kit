@@ -10,7 +10,7 @@ public enum ProcessOutput {
     case stderr(Data)
 }
 
-extension Process {
+open extension Process {
     /// Executes the supplied program in a new process, blocking until the process completes.
     /// Any data piped to `stdout` during the process will be returned as a string.
     /// If the process exits with a non-zero status code, an error will be thrown containing
